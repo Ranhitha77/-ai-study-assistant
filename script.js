@@ -26,8 +26,7 @@ generateBtn.addEventListener("click", async () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `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`
-      },
+        "Authorization": Bearer ${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} }, body: JSON.stringify(payload) });
       body: JSON.stringify({
         model: "gpt-3.5-turbo",
         messages: [{ role: "user", content: prompt }],
@@ -41,4 +40,5 @@ generateBtn.addEventListener("click", async () => {
     resultText.innerText = "❌ Error: " + error.message;
   }
 });
+
 
