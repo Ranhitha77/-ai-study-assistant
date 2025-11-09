@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Study Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 AI-Powered Study Assistant</h1>
+    <p>Enter your notes or question and choose what you want to do:</p>
+
+    <select id="mode">
+      <option value="summarize">Summarize Text</option>
+      <option value="question">Ask a Question</option>
+      <option value="quiz">Generate Quiz</option>
+    </select>
+
+    <textarea id="inputText" placeholder="Enter your study material or question here..."></textarea>
+
+    <button id="generateBtn">Generate</button>
+
+    <div id="output">
+      <h3>🧠 Result:</h3>
+      <p id="resultText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
